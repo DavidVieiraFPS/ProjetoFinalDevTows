@@ -69,7 +69,7 @@ app.post('/cadastro', (req, res) => {
     }
   }
 
-  const linkQR = "https://etecfy.onrender.com/divulgar/"+linkUnico
+  const linkQR = "https://vestibulinhoetec.onrender.com/divulgar/"+linkUnico
 
   // Gere um QR Code para o link único
   qrcode.toDataURL(linkQR, opts, (err, qrCodeDataURL) => {
@@ -150,7 +150,7 @@ app.post('/divulgar', (req, res) => {
   // Gere um link único para a pessoa cadastrada
   const linkUnico = uuidv4();
 
-  const linkQR = "https://etecfy.onrender.com/divulgar/"+linkUnico
+  const linkQR = "https://vestibulinhoetec.onrender.com/divulgar/"+linkUnico
 
   // Gere um QR Code para o link único
   qrcode.toDataURL(linkQR, (err, qrCodeDataURL) => {
